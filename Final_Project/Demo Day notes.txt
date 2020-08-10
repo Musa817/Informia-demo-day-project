@@ -1,0 +1,11 @@
+Demo Day Project Pitches
+[Version 1]
+Description (50 words or less.):
+Informia is an app that educates regular people of legislative actions occuring in Congress everyday.
+Knowledge is power and as such, the app gives the average US citizen the tools to be an active citizen aware of their power,
+using it to help improve their democracy. We feel that being a vocal and informed citizen is more important than ever in America.
+[Version 2]
+Description (50 words or less.):
+We feel that being an active, educated American citizen is more important that ever. Most people aren't aware of what goes on everyday
+in Congress. Informia changes that. The app informs the user of legislative actions debated and taken in Congress everyday.
+Knowledge is power and Informia wants power for the people.
