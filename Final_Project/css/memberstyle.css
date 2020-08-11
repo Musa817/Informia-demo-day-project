@@ -1,0 +1,15 @@
+body{
+    font-family: 'Sriracha', cursive;
+    font-size:  60px;
+    color: brown;
+    background: beige;
+}
+#info{
+    position: relative;
+    top: 200px;
+    text-align: center;
+    
+}
+#imgcontainer{
+    text-align: center;
+}

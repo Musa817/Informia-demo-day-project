@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+    <script src="js/sketch.js" defer></script>
+    <title>Main Congress</title>
+</head>
+
+<body>
+    <div class = "header">
+        <div class="nav-bar">
+            <a href="index.html">Bills</a>
+            <a href="members.html">Congressional Members</a>
+            <a href="statements.html">Statements</a>
+        </div>
+    </div>
+    <br>
+    <div class = "head">
+    <center>
+        <h1>INFORMIA</h1>
+    </center>
+    <h3><i>information is what empowers us!</i></h3>
+    </div>
+    <br>
+    <div class = "Container">
+    
+        <div id="sketch-holder">
+        </div>
+    
+       
+        <!-- Slides -->
+        <div class="slide_show fade">
+            <div class="slides fade">
+                <img src="images/changedbillData.jpg" width= "600px" height = "400px">
+                <div class="slidetext">Caption</div>
+
+
+            </div>
+            <div class="slides fade">
+                <img src="images/changedSenatordata.jpg" width = "600px" height="400px"> 
+                <div class="slidetext">Caption</div>
+            </div>
+            <div class="slides fade">
+                <img src="images/currentevents.jpg" width="600px" height = "400px">
+                <div class="slidetext">Caption</div>
+
+            </div>
+            <div class="slides fade">
+                <img src="images/Capitolhill.jpg" width = "600px" height = "400px">
+                <div class="slidetext">Caption</div>
+            </div>
+            <div class="slides fade">
+                <img src="images/usaflag.jpg" width="600px" height = "400px">
+                <div class="slidetext">Caption</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+
+
+        </div>
+
+        <br>
+        <!-- Dots -->
+        <div style="text-align:center">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+            <span class="dots" onclick="currentSlide(4)"></span>
+            <span class="dots" onclick="currentSlide(5)"></span>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
