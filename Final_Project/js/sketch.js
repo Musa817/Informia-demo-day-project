@@ -52,8 +52,8 @@ function count(membersObj) {
 }
 function mouseClicked() {
     if (state == 1) {
-        state = 0
-        clear()
+        //state = 0
+        background(0)
     }
     if (state == 0){
         console.log("pressed")
@@ -82,10 +82,12 @@ function mouseClicked() {
                             }
                         }
 
-                        else if (j==1 || j==2 && i==0) {
-                            yPos += 40
-                        }
+                        
                         else if (j == 1) {
+                            if (j==1 && i==0) {
+                                yPos += 40
+                                xPos = 80
+                            }
                             fill(0,0,255);
                             if (xPos < 280) {
                                 ellipse(xPos, yPos,10,10);
@@ -98,8 +100,11 @@ function mouseClicked() {
                             }
                         }
                         else if (j == 2) {
+                            if (j==2 && i==0) {
+                                yPos += 40
+                                xPos = 80
+                            }
                             fill(255,255,0);
-                            //yPos += 40
                             if (xPos < 280) {
                                 ellipse(xPos, yPos,10,10);
                                 xPos += 17;

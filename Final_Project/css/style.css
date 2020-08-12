@@ -60,9 +60,13 @@ body{
     max-width: 1000px;
     position: relative;
     margin: auto;
-   top: -300px;
-   left: 750px;
-
+   top: -400px;
+   left: 450px;
+}
+.slidetext{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 60px;
+}
 
 
 

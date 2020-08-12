@@ -1,5 +1,6 @@
 //Creating a button and running a function if said button is clicked.
 let statementButton = document.getElementById("statements");
+let stateData = document.createElement("div");
 let statementContainer = document.createElement("div");
 statementContainer.id = "statementcontainer";
 function onClick3(event){
@@ -24,11 +25,10 @@ fetch('https://api.propublica.org/congress/v1/statements/search.json?query=' + u
     let stateInfo = document.createElement("p");
     stateInfo.innerText = statementArray[i].statement_type;
     let stateTitle = document.createElement("p");
-    stateTitle.innerText = statementArray[i].subjects[0].title;
+    stateTitle.innerText = statementArray[i].title;
     let stateURL = document.createElement("a");
     stateURL.textContent = "More about the statement."
-    stateURL.href = statementArray[i].subjects[0].URL;
-    let stateData = document.createElement("div");
+    stateURL.href = statementArray[i].url;
     stateData.appendChild(stateInfo);
     stateData.appendChild(stateTitle);
     stateData.appendChild(stateURL);
@@ -36,7 +36,7 @@ fetch('https://api.propublica.org/congress/v1/statements/search.json?query=' + u
     document.body.appendChild(statementContainer);
 
     }
-	
+	inputElement.value = " ";
 	}
 	)
 	
@@ -44,6 +44,6 @@ fetch('https://api.propublica.org/congress/v1/statements/search.json?query=' + u
 		console.log("ERROR:", error);
 	
 	});
-	
+	stateData.innerHTML = " ";
 }
 statementButton.addEventListener("click", onClick3);
