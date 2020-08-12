@@ -4,7 +4,7 @@ let billInfo = document.createElement("div");
 billInfo.id = "info";
 let billSpace = document.getElementById("Bills");
 //Logging how many clicks user has.
-//let  
+ 
 function onClick(event){
 event.preventDefault();
 let inputElement = document.getElementById("keyword");
@@ -33,7 +33,8 @@ fetch(' https://api.propublica.org/congress/v1/bills/search.json?query=' + userI
 		billSummary.innerText = "Summary:" + " " + billArray[i].summary_short;
 		if (billArray[i].summary_short == "") {
 			billSummary.innerText = "Summary:" + " N/A"
-		}
+		}//closes summary short if-statement.
+		
 		billUrl.href = billArray[i].congressdotgov_url;
         billInfo.appendChild(billTitle);
      	billInfo.appendChild(billSummary);
