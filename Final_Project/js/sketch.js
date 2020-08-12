@@ -2,6 +2,11 @@ let members = false;
 let xPos = 80;
 let yPos = 80;
 let state = 0;
+let reload;
+
+/*function preload() {
+    reload = loadImage("images/refresh.png")
+}*/
 
 function setup() {
     let canvas = createCanvas(500, 400);
@@ -29,11 +34,11 @@ fetch('https://api.propublica.org/congress/v1/116/senate/members.json', {
         members = data.results[0].members;
     })
 
-/*
-function draw() {
-    if (98 < mouseX && mouseX < 182 && mouseY > 21 && mouseY < 59) {
 
-    }
+/*function draw() {
+    noStroke();
+    strokeWeight(0);
+    image(reload, 250, 370, 50, 50);
 }*/
 
 function count(membersObj) {
@@ -52,14 +57,20 @@ function count(membersObj) {
 
 function mouseClicked() {
     if (state == 1 && (98 < mouseX && mouseX < 182 && mouseY > 21 && mouseY < 59)) {
-        //state = 0
+        clear();
         background(0);
-
+        strokeWeight(4);
+        stroke(41);
+        fill(96, 96, 96.1);
+        rectMode(CENTER);
+        rect(140, 40, 80, 30);
+        fill(255);
+        textSize(15);
+        text("Senate", 115, 45);
     }
+    
     if (state == 0) {
         console.log("pressed")
-        fill(255, 0, 0)
-        //ellipse(50,50,15,10)
         noStroke();
         strokeWeight(0);
 
@@ -111,12 +122,21 @@ function mouseClicked() {
                         }
 
                     }
+                    
                 }
-
-
+                textSize(20);
+                fill(255,0,0);
+                console.log("got here");
+                text("Republican: " + data[0],335,100);
+                fill(0,0,255);
+                text("Democrat: " + data[1],335,210);
+                fill(255,255,0);
+                text("Independent: " + data[2],335,300);  
             }
             state = 1;
         }
-
+    }
+    if (state == 1 && (225 < mouseX && mouseX < 275 && mouseY > 350 && mouseY < 400)) {
+        state = 0
     }
 }

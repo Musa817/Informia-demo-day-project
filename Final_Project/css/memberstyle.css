@@ -1,13 +1,16 @@
 body{
     font-family: 'Sriracha', cursive;
-    font-size:  60px;
+    font-size:  20px;
     color: brown;
     background: beige;
 }
 #info{
     position: relative;
-    top: 200px;
     text-align: center;
+    border: 10px;
+    border-style: solid;
+    border-color: bisque;
+    border-radius: 13px;
     
 }
 #imgcontainer{

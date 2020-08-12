@@ -2,3 +2,9 @@ body{
     color: brown;
     background: beige;
 }
+#statementcontainer{
+    border: 10px;
+    border-style: solid;
+    border-color: bisque;
+    border-radius: 13px;
+}
