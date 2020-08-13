@@ -2,11 +2,10 @@ let members = false;
 let xPos = 80;
 let yPos = 80;
 let state = 0;
-let reload;
 
-/*function preload() {
-    reload = loadImage("images/refresh.png")
-}*/
+
+let butt = document.getElementById("butt");
+butt.addEventListener("click",onClick);
 
 function setup() {
     let canvas = createCanvas(500, 400);
@@ -34,13 +33,6 @@ fetch('https://api.propublica.org/congress/v1/116/senate/members.json', {
         members = data.results[0].members;
     })
 
-
-/*function draw() {
-    noStroke();
-    strokeWeight(0);
-    image(reload, 250, 370, 50, 50);
-}*/
-
 function count(membersObj) {
     let results = [0, 0, 0];
     for (let i = 0; i < membersObj.length; i++) {
@@ -53,6 +45,21 @@ function count(membersObj) {
         }
     }
     return results;
+}
+function onClick() {
+    state = 0
+    clear();
+    background(0);
+    strokeWeight(4);
+    stroke(41);
+    fill(96, 96, 96.1);
+    rectMode(CENTER);
+    rect(140, 40, 80, 30);
+    fill(255);
+    textSize(15);
+    text("Senate", 115, 45);
+    xPos = 80;
+    yPos = 80;
 }
 
 function mouseClicked() {
@@ -68,7 +75,6 @@ function mouseClicked() {
         textSize(15);
         text("Senate", 115, 45);
     }
-    
     if (state == 0) {
         console.log("pressed")
         noStroke();
@@ -135,8 +141,5 @@ function mouseClicked() {
             }
             state = 1;
         }
-    }
-    if (state == 1 && (225 < mouseX && mouseX < 275 && mouseY > 350 && mouseY < 400)) {
-        state = 0
     }
 }

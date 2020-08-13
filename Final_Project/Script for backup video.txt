@@ -1,0 +1,17 @@
+Script for Backup Demo Day Loom presentation:
+-Talk about why our group created this service:
+"Hello, I'm Musa Jallow, part of the group who made Informia along with Ibrahim Cosar, Karim Williams, and Xavier Johns. Before we talk about our service, I 
+think it would be nice to explain why we all created Informia.
+"Our group recognized that now more than ever, being a informed active citizen in America is important. So we created Informia to make the average citizen more 
+  informed of what goes on in Congress and their government every day, shown to them in an easily digestible and accessible format. Presenting legislative
+information in a cohesive and quick manner is especially paramount, as making a unfriendly interface can alienate a user and make them stop using the service. I personally remember 
+when I tried to tune into the C-Span channel to learn more about everyday politics in Congress. While it was informative, to me it was also very dry and I didn't
+exactly feel compelled to watch the C-Span channel again even though the information is important. Informia aims to inform people in an active, direct, and fast way."
+"Onto the main page of Informia. On this main page, users can view a schematic that informs them of how many republicans, democrats, and other affiliated members are in the senate right now." 
+"There is a slideshow that showcases some of what Informia has to offer including bill data, senator data and congressional statement data in order to inform the average citizen.
+"Looking at the top of the page, users can choose to search bills passed in Congress, information about their senator, and recent congressional statements.
+All they have to do is search with a keyword, and the top 20 most recent results related to that word will show: The results include the data the user chose 
+and links for further information."
+"In the future, we've been thinking about adding perhaps a chat room function so that users can chat about this political info. We've also been thinking about suggesting important topics that the user can search up as in its current iteration, the website puts all the onus on the user to find topics to search up."
+"Thank you for listening."
+
